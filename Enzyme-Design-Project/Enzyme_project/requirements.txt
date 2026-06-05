@@ -1,0 +1,24 @@
+# Enzyme Project
+
+#This project predicts the 3D structure of an enzyme, docks a substrate, and visualizes the complex.
+
+## Workflow
+#1. Place enzyme sequence in `data/esterase.fasta`
+#2. Run AlphaFold: `python scripts/run_alphafold.py`
+#3. Dock substrate: `python scripts/dock_substrate.py`
+#4. Visualize: `python scripts/visualize.py`
+
+## Requirements
+#- AlphaFold or ColabFold
+#- AutoDock Vina
+#- PyMOL (open-source)
+#- Python packages in `requirements.txt`
+
+
+
+biopython
+pymol
+openbabel
+vina
+matplotlib
+numpy
