@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ProjectTrace</title>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <!-- <img src="assets/robust_logo.png" -->
+        <img src="/static/assets/robust_logo.png"
+
+             alt="Robust Materials Technology"
+             onclick="window.location.reload()">
+    </div>
+
+    <div class="header-center">
+        <h1>ProjectTrace</h1>
+        <p class="subtitle">Robust Material Technology Digital Archival</p>
+        <p class="subtitle-line2">
+            Semantic Search | OCR Metadata | Project Lifecycle Record
+        </p>
+    </div>
+</header>
+
+<!-- UPLOAD BAR (TOP RIGHT BELOW HEADER) -->
+<div class="upload-bar">
+    <label class="upload-btn">
+        <span id="uploadText">⬆ Upload Data</span>
+        <input type="file" id="uploadFile" accept=".csv,.xls,.xlsx" hidden>
+    </label>
+</div>
+
+
+<!-- HERO SEARCH -->
+<section class="hero">
+    <div class="search-box">
+        <span class="filter-icon" onclick="toggleFilters()">⚙️</span>
+        <input
+            type="text"
+            id="query"
+            placeholder="Describe a project, method, or material..."
+        />
+        <button onclick="semanticSearch()">Search</button>
+    </div>
+</section>
+
+<!-- FILTER PANEL -->
+<div id="filterPanel" class="filter-panel hidden">
+    <div class="filter-group">
+        <label>From Date</label>
+        <input type="date">
+    </div>
+
+    <div class="filter-group">
+        <label>To Date</label>
+        <input type="date">
+    </div>
+
+    <div class="filter-group">
+        <label>API</label>
+        <select>
+            <option value="">All APIs</option>
+        </select>
+    </div>
+</div>
+
+<!-- SEARCH RESULTS -->
+<div id="results" class="results"></div>
+
+<!-- DOCUMENT DETAILS -->
+<div id="documentDetails" class="document-details"></div>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+                <li>Environmental Testing</li>
+                <li>Food Testing</li>
+                <li>Drug Testing</li>
+                <li>Research Consultancy</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Our Address</h3>
+            <p>
+                Robust Materials Technology Pvt. Ltd.<br>
+                Nagarabhavi, Bengaluru – 560072
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>📞 +91 96866 95557</p>
+            <p>✉️ info@robustmaterials.com</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            Copyright © 2022 Robust Materials Technology Pvt. Ltd.
+        </p>
+        <p>
+            Designed by <b>VR Institute</b> | IT Department
+        </p>
+    </div>
+</footer>
+
+<!-- <script src="./js/app.js"></script> -->
+<script src="/static/js/app.js"></script>
+
+</body>
+</html>
